@@ -1,0 +1,110 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sarucha Thaï Kitchen Menu</title>
+    <link rel="stylesheet" href="{% static 'menu/styles.css' %}">
+</head>
+<body>
+    <span>
+        <a href="{%  url 'home'  %}"><img src="{% static 'menu/images/logo_officiel_small.png' %}">
+        <a href="{%  url 'home'  %}"><img id="small_logo" src="{% static 'menu/images/Logo.png' %}"></a>
+    </span>
+    <div class="menu_title">
+
+        <h1>Salades</h1>
+    </div>
+
+    <div class="menu_list">
+        {% for salad in salads %}
+        <div class="menu_list_item">
+            <span class="menu_list_title">{{ salad.name }}</span>
+            <span class="menu_list_price">{{  salad.price | floatformat:2  }} €</span>
+            <span>
+                {% if salad.vegan == True %}
+                <img src="{% static 'menu/images/vegan.png' %}">
+                {% endif %}
+            </span>
+            <span>
+                {% if salad.spicy == True %}
+                <img src="{% static 'menu/images/spicy.png' %}">
+                {% endif %}
+            </span>
+            <span>
+                {% if salad.very_spicy == True %}
+                <img src="{% static 'menu/images/spicy.png' %}">
+                <img src="{% static 'menu/images/spicy.png' %}">
+                {% endif %}
+            </span>
+            <span class="menu_list_composition">{{  salad.composition  }}</span>
+
+        </div>
+        {% endfor %}
+    </div>
+
+        <h1>Plats</h1>
+    </div>
+
+    <div class="menu_list">
+        {% for dishe in dishes %}
+        <div class="menu_list_item">
+            <span class="menu_list_title">{{ dishe.name }}</span>
+            <span class="menu_list_price">{{  dishe.price | floatformat:2  }} €</span>
+            <span>
+                {% if dishe.vegan == True %}
+                <img src="{% static 'menu/images/vegan.png' %}">
+                {% endif %}
+            </span>
+            <span>
+                {% if dishe.spicy == True %}
+                <img src="{% static 'menu/images/spicy.png' %}">
+                {% endif %}
+            </span>
+            <span>
+                {% if dishe.very_spicy == True %}
+                <img src="{% static 'menu/images/spicy.png' %}">
+                <img src="{% static 'menu/images/spicy.png' %}">
+                {% endif %}
+            </span>
+            <span class="menu_list_composition">{{  dishe.composition  }}</span>
+
+        </div>
+        {% endfor %}
+    </div>
+
+
+<h1>Desserts</h1>
+    </div>
+
+    <div class="menu_list">
+        {% for dessert in desserts %}
+        <div class="menu_list_item">
+            <span class="menu_list_title">{{ dessert.name }}</span>
+            <span class="menu_list_price">{{  dessert.price | floatformat:2  }} €</span>
+            <span>
+                {% if dessert.vegan == True %}
+                <img src="{% static 'menu/images/vegan.png' %}">
+                {% endif %}
+            </span>
+            <span>
+                {% if dessert.spicy == True %}
+                <img src="{% static 'menu/images/spicy.png' %}">
+                {% endif %}
+            </span>
+            <span>
+                {% if dessert.very_spicy == True %}
+                <img src="{% static 'menu/images/spicy.png' %}">
+                <img src="{% static 'menu/images/spicy.png' %}">
+                {% endif %}
+            </span>
+            <span class="menu_list_composition">{{  dessert.composition  }}</span>
+
+        </div>
+        {% endfor %}
+    </div>
+
+
+</body>
+</html>

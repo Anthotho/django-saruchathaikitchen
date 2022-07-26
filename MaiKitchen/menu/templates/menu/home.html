@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sarucha Thaï Kitchen Home</title>
+    <link rel="stylesheet" href="{% static 'menu/style_home.css' %}">
+</head>
+<body>
+
+    <section>
+        <div class="centered">
+            <img id="logo_officiel" src="{% static 'menu/images/logo_officiel.png' %}">
+            <img src="{% static 'menu/images/Logo_home.png' %}">
+            <a href="{%  url 'menu'  %}"><img id="logo_menu" src="{% static 'menu/images/menu.png' %}"></a>
+        </div>
+    </section>
+
+    <footer>
+         <p>Plats à emporter sur la commune des Echets(01), ou en livraison xxkm max :<br>Pour vos commandes : Tel : 07-82-38-69-07 ou Whatt's app : Mai.pa18</p>
+    </footer>
+
+
+</body>
+</html>

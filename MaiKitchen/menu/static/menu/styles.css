@@ -1,0 +1,80 @@
+
+body
+{
+ background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("images/image_de_fond.jpg") no-repeat center center fixed; 
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+ font-family: Arial;
+ color: white;
+ margin-left: 0px;
+
+}
+
+
+#small_logo
+{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+
+
+h1
+{
+    background-color: #DE8300;
+    display: inline;
+    padding: 10px 22px;
+    border-radius: 15px;
+
+}
+
+
+.menu_title{
+    margin-top: 40px;
+    margin-bottom: 40px;
+} 
+
+
+.menu_list
+{
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-bottom: 45px;
+}
+
+.menu_list_item
+{
+ margin: 15px 0px;
+}
+
+.menu_list_title
+{
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.menu_list_price
+{
+    font-size: 20px;
+    color: #DE8300;
+    margin-left: 8px;
+    font-weight: bold;
+
+}
+
+.menu_list_composition
+{
+    font-size: 14px;
+    color: #e8dfdf;
+    margin-top : 2px;
+    display: block;
+    width: 57%;
+}
+
+
+.menu_list_vegan{
+    display: block;
+}

@@ -27,6 +27,14 @@ body
     margin-right: auto;
 }
 
+
+form  { display: table;      }
+p     { display: table-row;  }
+label { display: table-cell; }
+input { display: table-cell; }
+
+
+
 #logo_officiel
 {
   display: block;

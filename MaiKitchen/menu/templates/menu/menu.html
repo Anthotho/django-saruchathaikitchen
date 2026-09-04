@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <title>Sarucha Thaï Kitchen Menu</title>
     <link rel="stylesheet" href="{% static 'menu/styles.css' %}">
+    <link rel="icon" href="{% static 'menu/images/logo_officiel.ico' %}">
 </head>
 <body>
     <span>
@@ -105,6 +106,11 @@
         {% endfor %}
     </div>
 
+    <br/>
+    <br/>
 
+    <div  id="back_logo" >
+        <a  href="{%  url 'home'  %}"><img src="{% static 'menu/images/logo_officiel_small_retour.png' %}"></a>
+    </div>
 </body>
 </html>
